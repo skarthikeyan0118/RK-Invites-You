@@ -334,6 +334,13 @@
             50% { opacity: 1; }
         }
 
+        .button-subtitle {
+            font-size: 0.8rem;
+            font-weight: 400;
+            margin-top: 0.2rem;
+            opacity: 0.9;
+        }
+        
         /* Butterfly Animation */
         .butterfly {
             position: absolute;
@@ -1123,6 +1130,10 @@
             min-width: 130px;
             letter-spacing: 0.5px;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.2;
         }
 
         @keyframes buttonGlow {
@@ -1445,7 +1456,10 @@
                 <div class="ornamental-divider">❀ ❀ ❀</div>
                 <div class="invitation-opener">With immense joy and blessed hearts,<br>we cordially invite you to witness<br>To a beautiful celebration of Love</div>
                 <div style="position: relative;">
-                    <button class="open-button" onclick="openInvitation()" style="font-family: 'Charm', cursive; font-weight: 700;">Honor Us With Your Presence</button>
+                    <button class="open-button" onclick="openInvitation()" style="font-family: 'Charm', cursive; font-weight: 700;"> 
+                        <span>Honor Us With Your Presence</span>
+                        <span class="button-subtitle">(Tap here)</span>
+                    </button>
                     <div class="butterfly" id="butterfly">🦋</div>
                 </div>
                 <div class="ornamental-divider">❀ ❀ ❀</div>
